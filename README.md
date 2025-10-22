@@ -1,6 +1,8 @@
 # PHP 演算法面試題庫 - 完整解答版
 
-歡迎體驗 **PHP 演算法面試題庫 - 完整解答版**，這是一個專為 PHP 工程師打造的技術面試準備資源。本題庫收錄了一系列精心挑選的演算法與資料結構題目，每題均提供完整的 PHP 程式碼、詳細的解題思路，以及時間與空間複雜度分析。無論您是準備應對頂尖科技公司的 coding 面試，還是希望深入理解 PHP 在演算法場景中的應用，本題庫都能助您一臂之力。
+## Description
+
+**PHP 演算法面試題庫 - 完整解答版** 是一個專為 PHP 工程師打造的面試準備資源，收錄多種演算法與資料結構題目，涵蓋字串處理、資料結構實現、效能優化及系統設計。每題提供完整的 PHP 程式碼、詳細解題思路和複雜度分析，幫助您快速掌握面試核心技能。題目不僅模擬真實面試場景，還與實際開發（如 API 限流、快取系統）緊密相關，助您提升程式碼品質與職場競爭力。無論是新手或進階開發者，這份題庫都是您通往技術面試成功的理想指南！
 
 ## 學習這些題目的目的
 
@@ -14,7 +16,7 @@
 
 ### 實際應用場景
 這些題目不僅是面試的試金石，也與實際工作息息相關。例如：
-- **字串與陣列操作**（如 `TwoSum.php`、`AnagramCheck.php`）：適用於資料處理、搜尋引擎優化或 API 參數驗證。
+- **字串與陣列操作**（如 `AnagramCheck.php`、`TwoSum.php`）：適用於資料處理、搜尋引擎優化或 API 參數驗證。
 - **資料結構實現**（如 `LRUCache.php`、`SimpleCache.php`）：模擬快取系統（如 Redis）或記憶體管理邏輯。
 - **效能優化**（如 `MissingPositiveInteger.php`、`FindDuplicateElement.php`）：用於大數據處理或資料庫查詢優化。
 - **系統設計**（如 `RateLimiter.php`、`TaskScheduler.php`）：應用於 API 限流、任務排程或負載平衡。
@@ -24,15 +26,15 @@
 
 ## 題庫結構
 
-本題庫按題目類型分為五個類別，涵蓋 PHP 工程師在面試中常見的考點：
+本題庫按題目類型分為五個類別，涵蓋 PHP 工程師在面試中常見的考點，結構與生成腳本一致：
 
 | 類別 | 說明 | 相關檔案 |
 |------|------|----------|
-| **01_Strings_and_Arrays** | 展示 PHP 內建函數在字串與陣列操作上的高效應用，考驗基本資料處理能力。 | `ValidParentheses.php`, `FirstUniqueCharacter.php`, `TwoSum.php`, `MergeSortedArrays.php`, `MostFrequentElement.php`, `AnagramCheck.php`, `LongestNonRepeatingSubstring.php` |
-| **02_Data_Structures** | 深入考察堆疊、雜湊表、鏈表等資料結構的實現與應用。 | `LRUCache.php`, `SimpleCache.php` |
-| **03_Performance_Optimization** | 聚焦空間換時間、原地操作（如 In-place Hashing）及快慢指標等進階優化技巧。 | `MissingPositiveInteger.php`, `FindDuplicateElement.php` |
+| **01_Strings_and_Arrays** | 展示 PHP 內建函數在字串與陣列操作上的高效應用，考驗基本資料處理能力。 | `AnagramCheck.php`, `LongestNonRepeatingSubstring.php`, `MostFrequentElement.php`, `MergeSortedArrays.php` |
+| **02_Data_Structures** | 深入考察堆疊、雜湊表、鏈表等資料結構的實現與應用。 | `ValidParentheses.php`, `FirstUniqueCharacter.php`, `TwoSum.php`, `LRUCache.php`, `SimpleCache.php` |
+| **03_Performance_Optimization** | 聚焦空間換時間、原地操作（如 In-place Hashing）及快慢指標等進階優化技巧。 | `MissingPositiveInteger.php`, `FindDuplicateElement.php`, `KthLargestElement.php` |
 | **04_Math_and_Logic** | 測試數學邏輯與效能優化能力，強調數學運算的精準實現。 | `IsPalindromeNumber.php`, `IsPrime.php`, `Fibonacci.php` |
-| **05_Algorithm_and_System** | 模擬進階系統設計場景，考驗分散式系統與演算法思維的結合。 | `TaskScheduler.php`, `RateLimiter.php`, `KthLargestElement.php` |
+| **05_Algorithm_and_System** | 模擬進階系統設計場景，考驗分散式系統與演算法思維的結合。 | `TaskScheduler.php`, `RateLimiter.php` |
 
 ## 使用建議
 
@@ -50,23 +52,23 @@
 
 以下是題庫中的核心題目及其學習價值：
 
-- **ValidParentheses.php**：使用 `SplStack` 實現括號匹配，展現堆疊的經典應用。
-- **LRUCache.php**：模擬快取系統，使用自定義雙向鏈表實現 O(1) 操作，考驗系統設計能力。
-- **FirstUniqueCharacter.php**：利用 `array_count_values` 高效處理字串，展示 PHP 內建函數的強大。
-- **TwoSum.php**：經典 HashMap 應用，強調空間換時間的思維。
-- **MergeSortedArrays.php**：原地操作與雙指標技巧，展示高效陣列處理。
-- **MostFrequentElement.php**：簡單而實用的頻率統計問題，適用於資料分析場景。
 - **AnagramCheck.php**：利用 `count_chars` 實現高效異位詞判斷，體現 PHP C 層級函數的性能優勢。
 - **LongestNonRepeatingSubstring.php**：滑動窗口與 HashMap 的結合，考驗字串處理能力。
-- **TaskScheduler.php**：貪婪演算法應用於任務排程，模擬分散式系統設計。
-- **RateLimiter.php**：模擬 API 限流，展示固定窗口計數法的實用性。
+- **MostFrequentElement.php**：簡單而實用的頻率統計問題，適用於資料分析場景。
+- **MergeSortedArrays.php**：原地操作與雙指標技巧，展示高效陣列處理。
+- **ValidParentheses.php**：使用 `SplStack` 實現括號匹配，展現堆疊的經典應用。
+- **FirstUniqueCharacter.php**：利用 `array_count_values` 高效處理字串，展示 PHP 內建函數的強大。
+- **TwoSum.php**：經典 HashMap 應用，強調空間換時間的思維。
+- **LRUCache.php**：模擬快取系統，使用自定義雙向鏈表實現 O(1) 操作，考驗系統設計能力。
 - **SimpleCache.php**：實現帶 TTL 的快取系統，強調 FIFO 淘汰策略。
+- **MissingPositiveInteger.php**：原地雜湊技巧，實現 O(1) 空間複雜度。
+- **FindDuplicateElement.php**：Floyd 快慢指標法，模擬鏈表循環檢測，實現 O(1) 空間。
+- **KthLargestElement.php**：使用 `SplPriorityQueue` 實現最小堆，處理第 K 大元素。
 - **IsPalindromeNumber.php**：數學方式實現迴文判斷，避免字串轉換，展現效能優化。
 - **IsPrime.php**：數學優化（6k±1 檢查），展示質數判斷的效率。
 - **Fibonacci.php**：動態規劃實現，避免遞迴，強調迭代效率。
-- **KthLargestElement.php**：使用 `SplPriorityQueue` 實現最小堆，處理第 K 大元素。
-- **MissingPositiveInteger.php**：原地雜湊技巧，實現 O(1) 空間複雜度。
-- **FindDuplicateElement.php**：Floyd 快慢指標法，模擬鏈表循環檢測，實現 O(1) 空間。
+- **TaskScheduler.php**：貪婪演算法應用於任務排程，模擬分散式系統設計。
+- **RateLimiter.php**：模擬 API 限流，展示固定窗口計數法的實用性。
 
 ## 如何貢獻
 
